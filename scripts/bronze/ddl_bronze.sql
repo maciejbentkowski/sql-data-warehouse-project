@@ -11,7 +11,7 @@ WARNING:
 
 DROP TABLE IF EXISTS bronze.crm_cust_info;
 CREATE TABLE bronze.crm_cust_info (
-	  cst_id INTEGER,
+    cst_id INTEGER,
     cst_key VARCHAR(50),
     cst_firstname VARCHAR(50),
     cst_lastname VARCHAR(50),
@@ -36,10 +36,10 @@ CREATE TABLE bronze.crm_sales_details (
     sls_ord_num VARCHAR(50),
     sls_prd_key VARCHAR(50),
     sls_cust_id INTEGER,
-    sls_order_dt VARCHAR(50),
-    sls_ship_dt VARCHAR(50),
-    sls_due_dt VARCHAR(50),
-	  sls_sales INTEGER,
+    sls_order_dt INTEGER,
+    sls_ship_dt INTEGER,
+    sls_due_dt INTEGER,
+    sls_sales INTEGER,
     sls_quantity INTEGER,
     sls_price INTEGER
 );
@@ -53,15 +53,15 @@ CREATE TABLE bronze.erp_cust_az12 (
 
 DROP TABLE IF EXISTS bronze.erp_loc_a101;
 CREATE TABLE bronze.erp_loc_a101 (
-	  cid VARCHAR(50),
-    cntry VARCHAR(50)
+     cid VARCHAR(50),
+     cntry VARCHAR(50)
 );
 
 DROP TABLE IF EXISTS bronze.erp_px_cat_g1v2;
 CREATE TABLE bronze.erp_px_cat_g1v2 (
-    id VARCHAR(50),
-    cat VARCHAR(50),
-    subcat VARCHAR(50),
-    maintenance VARCHAR(50)
+     id VARCHAR(50),
+     cat VARCHAR(50),
+     subcat VARCHAR(50),
+     maintenance VARCHAR(50)
 );
 
